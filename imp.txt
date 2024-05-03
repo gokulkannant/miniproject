@@ -1,0 +1,26 @@
+[nodemon] app crashed - waiting for file changes before starting...
+ChatGPT
+The error message you're seeing indicates that the port 3001 is already in use by another process, hence your Node.js application can't start because it's unable to listen on that port. This typically happens when another instance of your application is already running or if another application is using the same port.
+
+To resolve this issue:
+
+Identify the Process: You need to identify the process that is currently using port 3001. You can do this by opening a command prompt and running the following command:
+Copy code
+
+netstat -ano | findstr :3001
+
+This command will list the processes using port 3001 along with their Process IDs (PID).
+Terminate the Process: Once you have identified the process, you can terminate it using its PID. Run the following command:
+php
+Copy code
+
+taskkill /PID <PID> /F
+
+Replace <PID> with the actual Process ID you obtained from the previous command.For example:
+r
+Copy code
+
+taskkill /PID 12345 /F
+
+This command will forcefully terminate the process using port 3001.
+Restart Your Application: After terminating the conflicting process, try restarting your Node.js application.
