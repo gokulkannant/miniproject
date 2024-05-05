@@ -7,9 +7,10 @@ function Signup() {
 
     const [email, setEmail] = useState()
     const [password, setPassword] = useState() 
+    const [name, setName] = useState()
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/register',{email, password})
+        axios.post('http://localhost:3001/register',{name, email, password})
         .then(result => console.log(result))
         .catch(err=> console.log(err))
     }
@@ -25,7 +26,7 @@ function Signup() {
     <div>
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required
-        onChange={(e) => setEmail(e.target.value)} />
+        onChange={(e) => setName(e.target.value)} />
         </div>
 
         <div>

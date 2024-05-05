@@ -1,0 +1,12 @@
+{
+    "nodes": [
+      { "id": "classroom1", "x": 100, "y": 200 },
+      { "id": "officeA", "x": 300, "y": 150 },
+      // Add more nodes...
+    ],
+    "links": [
+      { "source": "classroom1", "target": "officeA" },
+      // Add more links...
+    ]
+  }
+  
