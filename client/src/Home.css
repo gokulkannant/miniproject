@@ -78,6 +78,7 @@ body {
 }
 
 .content-links a {
+    border: 2px solid black;
     color: #333;
     text-decoration: none;
     padding: 10px 15px;
@@ -118,3 +119,5 @@ body {
 .contact-us:hover a {
     color: red;
 }
+
+

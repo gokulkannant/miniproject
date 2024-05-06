@@ -22,7 +22,7 @@ function Home() {
                 <p>Here you can find various tools to navigate through our campus easily.</p>
                 {/* Additional links for clarity */}
                 <ul className="content-links">
-                    <li><Link to="/location-finder">Location Finder</Link></li>
+                    <li><Link to="/collegeplan">Location Finder</Link></li>
                     <li><Link to="/exam">Exam Hall Finder</Link></li>
                 </ul>
             </div>
