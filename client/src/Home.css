@@ -42,3 +42,31 @@ nav ul li a:hover {
     background-color: #333;
     color: #fff;
 }
+
+.contact-us {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FF5733; /* Set initial border color to match the background color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect for color change */
+}
+
+.contact-us a {
+    color: white; /* Default font color is white */
+    text-decoration: none;
+}
+
+.contact-us:hover {
+    background-color: white;
+    border-color: black; /* Change border color to black on hover */
+    border-width: 1px;
+}
+
+.contact-us:hover a {
+    color: red; /* Change font color to red on hover */
+}
