@@ -5,28 +5,15 @@ import collegeMapImage from "../maps/gcekmap.jpg"; // Import your image file
 const CollegePlan = () => {
   const svgRef = useRef();
 
-
-// Image dimensions
-  const imageWidth = 343;
-  const imageHeight = 573;
-
-  // SVG container dimensions
-  const svgWidth = 600;
-  const svgHeight = 500;
-
-  // Calculate the position to center the image
-  const imageX = (svgWidth - imageWidth) / 2;
-  const imageY = (svgHeight - imageHeight) / 2;
-
-
-
   const [data, setData] = useState({
     nodes: [
       { id: "Main Gate", x: 43, y: 296 },
       { id: "Front Gate", x: 112, y: 250 },
-      { id: "officeA", x: 500, y: 150 },
-      { id: "officeB", x: 300, y: 300 },
-      { id: "library", x: 300, y: 450 }
+      { id: "Canteen", x: 138, y: 274 },
+      { id: "Flag Post", x: 172, y: 287 },
+      { id: "Civil Lab", x: 172, y: 242 },
+      { id: "Cooperative Store", x: 112, y: 250 },
+      { id: "Cooperative Store", x: 112, y: 250 }
     ],
     links: [
       { source: "Main Gate", target: "Front Gate", weight: 1 }
