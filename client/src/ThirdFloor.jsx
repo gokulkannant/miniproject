@@ -1,35 +1,68 @@
 import React, { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
-import collegeMapImage from "../maps/gcekmap.jpg"; // Import your image file
+import collegeMapImage from "../maps/college-map-image.jpg"; // Import your image file
 
 const CollegePlan = () => {
   const svgRef = useRef();
 
-
-// Image dimensions
-  const imageWidth = 343;
-  const imageHeight = 573;
-
-  // SVG container dimensions
-  const svgWidth = 600;
-  const svgHeight = 500;
-
-  // Calculate the position to center the image
-  const imageX = (svgWidth - imageWidth) / 2;
-  const imageY = (svgHeight - imageHeight) / 2;
-
-
-
   const [data, setData] = useState({
     nodes: [
-      { id: "Main Gate", x: 43, y: 296 },
-      { id: "Front Gate", x: 112, y: 250 },
+      { id: "classroom1", x: 125, y: 376 },
+      { id: "classroom2", x: 125, y: 300 },
       { id: "officeA", x: 500, y: 150 },
       { id: "officeB", x: 300, y: 300 },
-      { id: "library", x: 300, y: 450 }
+      { id: "library", x: 300, y: 450 },
+      { id: "class1", x: 125, y: 378 },
+      { id: "class2", x: 124, y: 301 },
+      { id: "class3", x: 124, y: 226 },
+      { id: "class4", x: 125, y: 153 },
+      { id: "class5", x: 124, y: 100 },
+      { id: "class6", x: 116, y: 77 },
+      { id: "class7", x: 32, y: 78 },
+      { id: "class8", x: 282, y: 76 },
+      { id: "class9", x: 283, y: 122 },
+      { id: "class10", x: 285, y: 170 },
+      { id: "class11", x: 284, y: 221 },
+      { id: "class12", x: 284, y: 318 },
+      { id: "class13", x: 283, y: 371 },
+      { id: "class14", x: 284, y: 435 },
+      { id: "class15", x: 453, y: 75 },
+      { id: "class16", x: 482, y: 78 },
+      { id: "class17", x: 482, y: 101 },
+      { id: "class18", x: 483, y: 153 },
+      { id: "class19", x: 483, y: 229 },
+      { id: "class20", x: 485, y: 304 },
+      { id: "class21", x: 487, y: 378 },
+      { id: "class22", x: 486, y: 429 }
     ],
     links: [
-      { source: "Main Gate", target: "Front Gate", weight: 1 }
+      { source: "classroom1", target: "classroom2", weight: 1 },
+      { source: "classroom2", target: "officeA", weight: 2 },
+      { source: "officeA", target: "officeB", weight: 3 },
+      { source: "officeB", target: "library", weight: 4 },
+      { source: "library", target: "classroom1", weight: 1 },
+      // Manually added links
+      { source: "class1", target: "class2", weight: 1 },
+      { source: "class2", target: "class3", weight: 1 },
+      { source: "class3", target: "class4", weight: 1 },
+      { source: "class4", target: "class5", weight: 1 },
+      { source: "class5", target: "class6", weight: 1 },
+      { source: "class6", target: "class7", weight: 1 },
+      { source: "class6", target: "class8", weight: 1 },
+      { source: "class8", target: "class9", weight: 1 },
+      { source: "class9", target: "class10", weight: 1 },
+      { source: "class10", target: "class11", weight: 1 },
+      { source: "class11", target: "class12", weight: 1 },
+      { source: "class12", target: "class13", weight: 1 },
+      { source: "class13", target: "class14", weight: 1 },
+      { source: "class8", target: "class15", weight: 1 },
+      { source: "class15", target: "class16", weight: 1 },
+      { source: "class16", target: "class17", weight: 1 },
+      { source: "class17", target: "class18", weight: 1 },
+      { source: "class18", target: "class19", weight: 1 },
+      { source: "class19", target: "class20", weight: 1 },
+      { source: "class20", target: "class21", weight: 1 },
+      { source: "class21", target: "class22", weight: 1 }
     ]
   });
 
@@ -40,12 +73,11 @@ const CollegePlan = () => {
   useEffect(() => {
     const svg = d3.select(svgRef.current);
 
+    // Append the image as the background
     svg.append("image")
-    .attr("href", collegeMapImage) // Set the image source
-    .attr("width", 343)
-    .attr("height", 573)
-    .attr("x", 0) // Align image to the left
-   // .attr("y", 0); // Align image to the top
+      .attr("href", collegeMapImage) // Set the image source
+      .attr("width", 600)
+      .attr("height", 500);
 
     // Render nodes
     const nodeElements = svg

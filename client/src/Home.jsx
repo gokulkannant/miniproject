@@ -11,6 +11,9 @@ function Home() {
                     <img src="/logo.svg" alt="Logo" />
                     <span className="logo-text">Campus Navigation</span>
                 </div>
+                <div className="contact-us">
+                    <Link to="/contact">Contact Us</Link>
+                </div>
                 <ul className="nav-links">
                     <li><Link to="/login">Login</Link></li>
                 </ul>
@@ -26,13 +29,10 @@ function Home() {
                     <li><Link to="/exam">Exam Hall Finder</Link></li>
                 </ul>
             </div>
-
-            {/* Contact Us */}
-            <div className="contact-us">
-                <Link to="/contact">Contact Us</Link>
-            </div>
         </div>
     );
 }
+
+
 
 export default Home;
