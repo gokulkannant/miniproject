@@ -1,4 +1,6 @@
-/* Common.css */
+/* Home.css */
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,43 +8,89 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-h1 {
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.logo-text {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Content Area */
+.content {
+    padding: 20px;
     text-align: center;
+}
+
+.content h2 {
     color: #333;
 }
 
-nav ul {
+.content-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+.content-links li {
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
-    text-decoration: none;
+.content-links a {
     color: #333;
+    text-decoration: none;
     padding: 10px 15px;
-    border: 2px solid #333;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
+.content-links a:hover {
     background-color: #333;
     color: #fff;
 }
 
+/* Contact Us Section */
 .contact-us {
     position: absolute;
     top: 10px;
@@ -51,22 +99,22 @@ nav ul li a:hover {
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 2px solid #FF5733; /* Set initial border color to match the background color */
+    border: 2px solid #FF5733;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Add transition effect for color change */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .contact-us a {
-    color: white; /* Default font color is white */
+    color: white;
     text-decoration: none;
 }
 
 .contact-us:hover {
     background-color: white;
-    border-color: black; /* Change border color to black on hover */
+    border-color: black;
     border-width: 1px;
 }
 
 .contact-us:hover a {
-    color: red; /* Change font color to red on hover */
+    color: red;
 }
