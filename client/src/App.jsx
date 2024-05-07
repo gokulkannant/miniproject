@@ -7,6 +7,7 @@ import Home from './Home'
 import CollegePlan from './CollegePlan'
 import FacultyLogin from './FacultyLogin'
 import DataEnter from './DataEnter'
+import ThirdFloor from './ThirdFloor'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/collegeplan' element={<CollegePlan /> }></Route>
         <Route path='/facultylogin' element={<FacultyLogin /> }></Route>
         <Route path='/dataenter' element={<DataEnter /> }></Route>
+        <Route path='/thirdfloor' element={<ThirdFloor /> }></Route>
 
 
         

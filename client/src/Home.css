@@ -6,35 +6,39 @@ body {
     padding: 0;
 }
 
+
+
+
 /* Navigation Bar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
     color: #fff;
     padding: 20px 0;
 }
 
 .logo {
-    display: inline-block;
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     height: 50px;
-    vertical-align: middle;
+    margin-right: 10px;
 }
 
 .logo-text {
-    font-size: 24px;
-    vertical-align: middle;
-    /* Change the font family here */
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-family: 'Mirai', sans-serif; /* Assuming 'Mirai' is the name of your font */
+    font-weight: bold;
 }
 
 .nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
 }
 
 .nav-links li {
@@ -59,10 +63,23 @@ body {
 .content {
     padding: 20px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
-.content h2 {
+.content h1 {
     color: #333;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 125%;
+}
+
+
+.content p {
+    margin-bottom: 26px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+   
 }
 
 .content-links {
@@ -91,69 +108,69 @@ body {
     color: #fff;
 }
 
-/* Contact Us Section */
-.contact-us {
+
+
+.login {
     position: absolute;
-    top: 10px;
+    top: 50px; /* Adjust as needed for proper spacing */
     right: 10px;
-    background-color: #FF5733;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #FF5733;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.contact-us a {
-    color: white;
+.login a {
+    color: #fff;
     text-decoration: none;
 }
 
-.contact-us:hover {
-    background-color: white;
-    border-color: black;
-    border-width: 1px;
+.login a:hover {
+    color: #ddd;
 }
 
-.contact-us:hover a {
-    color: red;
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0;
+    text-align:center;
 }
 
-/* Media Queries for Responsive Design */
-@media only screen and (max-width: 768px) {
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    .logo-text {
-        font-size: 20px;
-    }
-
-    .nav-links li {
-        margin-right: 10px;
-    }
-
-    .nav-links a {
-        padding: 8px 12px;
-    }
-
-    .content {
-        padding: 10px;
-    }
-
-    .content-links a {
-        padding: 8px 12px;
-    }
-
-    .contact-us {
-        top: 5px;
-        right: 5px;
-        padding: 8px 16px;
-        font-size: 14px;
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+  /*Image*/
+
+  .maingate {
+    text-align: center;
+  }
+
+  .maingate img {
+    border-radius: 20px;
+  }

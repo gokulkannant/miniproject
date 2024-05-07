@@ -43,7 +43,7 @@ function Exam() {
                 <div style={{ position: "relative" }}>
                     <a href={`images/room_${room}.png`} id="openRoomLink" >Open room</a> 
                     <span></span> {/* Adding space */}
-                    <a href={`images1/map_${room}.png`} id="openMapLink" >Open Map</a>
+                   <p id="OpenMapLink"><Link to="/thirdfloor" >Open Map</Link></p>
                 </div>
             )}
             {!isClickable && (

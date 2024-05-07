@@ -8,7 +8,7 @@ body {
 
 h2 {
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     margin-top: 50px;
     color: #333;
@@ -25,10 +25,13 @@ form {
 }
 
 label {
+   
     font-weight: bold;
-    color: #555;
+    font-size: larger;
+    color: black;
     display: block;
     margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input[type="text"],
@@ -41,17 +44,7 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-button[type="submit"] {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+
 
 button[type="submit"]:hover {
     background-color: #0056b3;
@@ -157,18 +150,19 @@ input[type="password"] {
 
 button[type="submit"] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 15px;
     font-size: 16px;
     color: #fff;
-    background-color: #007BFF;
+    background-color: #080909;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #606972;
 }
 
 button[type="submit"]:disabled {
@@ -297,6 +291,7 @@ button[type="submit"]:disabled {
 
 .loginText{
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
