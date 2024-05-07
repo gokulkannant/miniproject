@@ -53,7 +53,7 @@ function Exam() {
                     <span style={{ color: "gray" }}>Open Map</span>
                 </div>
             )}
-            <p id="signupText"><Link to="/signup" >Sign Up</Link></p>
+            <p id="signupText"><Link to="/" >Home</Link></p>
             </form>
         </div>
     );

@@ -30,7 +30,7 @@ function Login() {
 
     <div>
 
-        <h2>Login</h2>
+        <h2>Faculty Login</h2>
 
     <form onSubmit={handleSubmit}>
         <div>
@@ -44,13 +44,10 @@ function Login() {
         <input type="password" id="password" name="password" required
         onChange={(e) => setPassword(e.target.value)} />
         </div>
-
         <button type="submit">Login</button>
-        <br />
-        <div className="loginText">
-            <p>Don't have an account?</p>
-        <Link to="/signup" type="submit">Sign Up</Link>
-        </div>
+
+        <p id="signupText"><Link to="/" >Home</Link></p>
+
     </form>
        
         
