@@ -1,0 +1,22 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainContainer button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Adjust the value for roundness */
+    cursor: pointer;
+    margin: 10px;
+}
+
+.mainContainer input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

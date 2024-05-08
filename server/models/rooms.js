@@ -1,22 +1,13 @@
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
-const roomSchema = new mongoose.Schema({
-  roomNumber: {
-    type: String,
-    required: true
-  },
-  students: {
-    from: {
-      type: Number,
-      required: true
-    },
-    to: {
-      type: Number,
-      required: true
-    }
-  }
-});
 
-const Room = mongoose.model('Room', roomSchema);
+// const mainSchema = new mongoose.Schema({
+//   classes: {type: Object},
 
-module.exports = Room;
+// });
+
+
+// const Room = mongoose.model("rooms", mainSchema);
+
+
+// module.exports = Room;

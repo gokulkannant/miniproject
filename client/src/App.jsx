@@ -8,6 +8,7 @@ import CollegePlan from './CollegePlan'
 import FacultyLogin from './FacultyLogin'
 import DataEnter from './DataEnter'
 import ThirdFloor from './ThirdFloor'
+import Key from './Key'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/facultylogin' element={<FacultyLogin /> }></Route>
         <Route path='/dataenter' element={<DataEnter /> }></Route>
         <Route path='/thirdfloor' element={<ThirdFloor /> }></Route>
+        <Route path='/key' element={<Key /> }></Route>
 
 
         

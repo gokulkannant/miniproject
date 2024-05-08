@@ -12,7 +12,7 @@ function Home() {
                     <span className="logo-text">Campus Navigation</span>
                 </div>
                 <div className="nav-links">
-                    <Link to="/login">Login</Link>
+                    <Link to="/dataenter">Upload</Link>
                 </div>
             </nav>
 

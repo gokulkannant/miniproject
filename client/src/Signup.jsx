@@ -5,12 +5,12 @@ import './Common.css'
 
 function Signup() {
 
-    const [email, setEmail] = useState()
+    const [username, setUserName] = useState()
     const [password, setPassword] = useState() 
-    const [name, setName] = useState()
+   // const [name, setName] = useState()
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/register',{name, email, password})
+        axios.post('http://localhost:3001/register',{username, password})
         .then(result => console.log(result))
         .catch(err=> console.log(err))
     }
@@ -23,16 +23,10 @@ function Signup() {
 
     <form onSubmit={handleSubmit}>
 
-    <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required
-        onChange={(e) => setName(e.target.value)} />
-        </div>
-
         <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required
-        onChange={(e) => setEmail(e.target.value)} />
+        <label htmlFor="username">User Name:</label>
+        <input type="text" id="username" name="username" required
+        onChange={(e) => setUserName(e.target.value)} />
         </div>
 
         <div>
